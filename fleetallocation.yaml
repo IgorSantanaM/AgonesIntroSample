@@ -1,5 +1,8 @@
-apiVersion: "stable.agones.dev/v1alpha1"
-kind: FleetAllocation
-metadata:
-  generateName: xonotic-
-fleetName: xonotic
+apiVersion: allocation.agones.dev/v1
+kind: GameServerAllocation
+
+spec:
+  selectors:
+    - matchLabels:
+        agones.dev/fleet: xonotic
+      gameServerState: Ready
