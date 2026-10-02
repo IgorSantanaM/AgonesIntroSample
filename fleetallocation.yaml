@@ -1,0 +1,5 @@
+apiVersion: "stable.agones.dev/v1alpha1"
+kind: FleetAllocation
+metadata:
+  generateName: xonotic-
+fleetName: xonotic
